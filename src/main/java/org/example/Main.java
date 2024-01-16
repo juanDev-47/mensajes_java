@@ -17,8 +17,8 @@ public class Main {
             System.out.println("aplicacion de mensajes");
             System.out.println("1. crear un mensaje");
             System.out.println("2. Listar los mensajes");
-            System.out.println("3. editar los mensajes");
-            System.out.println("4. eliminar un mensaje");
+            System.out.println("3. eliminar un mensaje");
+            System.out.println("4. editar los mensajes");
             System.out.println("5. Salir");
 
             opcion = sc.nextInt();

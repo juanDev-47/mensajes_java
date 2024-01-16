@@ -19,11 +19,19 @@ public class MensajeService {
     }
 
     public static void listarMensajes(){
-
+        MensajesDAO.leerMensajeDB();
     }
 
     public static void borrarMensaje(){
+        Scanner sc = new Scanner(System.in);
+        String id;
+        System.out.println("----------------");
+        System.out.println("Ingrese el identificador a ser eliminado");
+        id = sc.nextLine();
 
+        int id_mensaje = Integer.parseInt(id);
+
+        MensajesDAO.borrarMensajeDB(id_mensaje);
     }
 
     public static void actualizarMensaje(){
